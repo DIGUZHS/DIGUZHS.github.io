@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://diguzhs.github.io/archives/2024/05/"/>
+  
+  <link rel="canonical" href="https://diguzhs.github.io/2024/05/26/51单片机中断/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -33,18 +33,22 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>归档：2024/5 - DUSK's Blog</title>
-  <meta name="keywords" content="null">
-  <meta desc name="description" content="交接学习 技术分享 - ZHS Doe - DUSK's Blog">
+  <title>51单片机中断 - DUSK's Blog</title>
+  <meta name="keywords" content="教程,C51,null">
+  <meta desc name="description" content="中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理；CPU 暂时停止当前的工作，转去处理事件B；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A，这一过程称为中断。 - ZHS Doe - DUSK's Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="DUSK&#39;s Blog">
-<meta property="og:url" content="https://diguzhs.github.io/archives/2024/05/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="51单片机中断">
+<meta property="og:url" content="https://diguzhs.github.io/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/index.html">
 <meta property="og:site_name" content="DUSK&#39;s Blog">
-<meta property="og:description" content="交接学习 技术分享">
+<meta property="og:description" content="中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理；CPU 暂时停止当前的工作，转去处理事件B；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A，这一过程称为中断。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-05-26T07:41:41.000Z">
+<meta property="article:modified_time" content="2024-05-30T11:00:51.821Z">
 <meta property="article:author" content="ZHS Doe">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="C51">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2306,7 +2310,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2865,7 +2869,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2926,23 +2930,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://diguzhs.github.io/2024/05/26/51单片机中断/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="DUSK's Blog">
@@ -2952,110 +2940,623 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="交接学习 技术分享">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         51单片机中断
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理；CPU 暂时停止当前的工作，转去处理事件B；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A，这一过程称为中断。
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      </h1>
+      <div class='new-meta-box'>
         
-        <time itemprop="dateCreated datePublished" datetime="2024-05-26T15:41:41+08:00">2024-05-26</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/about/" rel="nofollow">
+    <img itemprop="image" src="https://img2.imgtp.com/2024/05/23/DWMjirr9.png" class="lazyload" data-srcset="https://img2.imgtp.com/2024/05/23/DWMjirr9.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">DUSK</p>
+  </a>
 </div>
 
+          
+        
+          
+            
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-05-26T15:41:41+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年5月26日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：3.5k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：13 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>教程</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/C51/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>C51</p></a></div>
+  <span hidden itemprop="keywords">教程 C51</span>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://diguzhs.github.io/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/&title=51单片机中断 - DUSK's Blog&summary=中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理；CPU 暂时停止当前的工作，转去处理事件B；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A，这一过程称为中断。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://diguzhs.github.io/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/&title=51单片机中断 - DUSK's Blog&summary=中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理；CPU 暂时停止当前的工作，转去处理事件B；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A，这一过程称为中断。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://diguzhs.github.io/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/&title=51单片机中断 - DUSK's Blog&summary=中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理；CPU 暂时停止当前的工作，转去处理事件B；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A，这一过程称为中断。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="中断概念"><a href="#中断概念" class="headerlink" title="中断概念"></a><strong>中断概念</strong></h2><p>中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理（中断发生）；CPU 暂时停止当前的工作（中断响应），转去处理事件B（中断服务）；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A（中断返回），这一过程称为中断。</p>
+<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/IMG_20240527_211214-1716815640389-2.png" class="lazyload" data-srcset="/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/IMG_20240527_211214-1716815640389-2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="单片机中断过程" style="width:300px;"></div><span class="image-caption">单片机中断过程</span></div>
+
+<h3 id="中断优先级"><a href="#中断优先级" class="headerlink" title="中断优先级"></a><strong>中断优先级</strong></h3><p>单片机在执行程序的时候，可能在同一时刻有多个中断，那么就要通过中断优先级来判断哪一个中断先执行。</p>
+<p>下面是单片机默认中断源的优先级：</p>
+<table>
+<thead>
+<tr>
+<th>中断源</th>
+<th>默认中断级别</th>
+<th>序号（C语言用）</th>
+<th>入口地址（汇编语言用）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>INT0-外部中断0</td>
+<td>最高</td>
+<td>0</td>
+<td>0003H</td>
+</tr>
+<tr>
+<td>T0-定时器&#x2F;计数器0中断</td>
+<td>第2</td>
+<td>1</td>
+<td>000BH</td>
+</tr>
+<tr>
+<td>INT1-外部中断1</td>
+<td>第3</td>
+<td>2</td>
+<td>0013H</td>
+</tr>
+<tr>
+<td>T1-定时器&#x2F;计数器1中断</td>
+<td>第4</td>
+<td>3</td>
+<td>001BH</td>
+</tr>
+<tr>
+<td>TI&#x2F;RI-串行口中断</td>
+<td>第5</td>
+<td>4</td>
+<td>0023H</td>
+</tr>
+<tr>
+<td>T2-定时器&#x2F;计数器2中断</td>
+<td>最低</td>
+<td>5</td>
+<td>002BH</td>
+</tr>
+</tbody></table>
+<div class="note warning"><p>注意：T2-定时器&#x2F;计数器2中断，为52单片机独有的，51单片机没有T2。</p></div>
+
+<h3 id="中断优先级寄存器-IP"><a href="#中断优先级寄存器-IP" class="headerlink" title="中断优先级寄存器 IP"></a><strong>中断优先级寄存器 IP</strong></h3><p>在51单片机中，高优先级中断能够打断低优先级中断从而形成中断嵌套，多个中断同时产生时，按照默认中断优先级响应中断，当然也可以自己设定中断优先级。</p>
+<p>下面是优先级寄存器IP：</p>
+<table>
+<thead>
+<tr>
+<th>位序号</th>
+<th>D7</th>
+<th>D6</th>
+<th>D5</th>
+<th>D4</th>
+<th>D3</th>
+<th>D2</th>
+<th>D1</th>
+<th>D0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>位符号</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>PS</td>
+<td>PT1</td>
+<td>PX1</td>
+<td>PT0</td>
+<td>PX0</td>
+</tr>
+<tr>
+<td>位地址</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>BCH</td>
+<td>BBH</td>
+<td>BAH</td>
+<td>B9H</td>
+<td>B8H</td>
+</tr>
+</tbody></table>
+<div class="tabs" id="tab-ip"><ul class="nav-tabs"><li class="tab active"><a class="#ip-1">PS</a></li><li class="tab"><a class="#ip-2">PT1</a></li><li class="tab"><a class="#ip-3">PX1</a></li><li class="tab"><a class="#ip-4">PT0</a></li><li class="tab"><a class="#ip-5">PX0</a></li></ul><div class="tab-content"><div class="tab-pane active" id="ip-1"><p>串行口中断优先级控制位。</p>
+<p>PS &#x3D; 1，串行口中断定义为高优先级中断。</p>
+<p>PS &#x3D; 0，串行口中断定义为低优先级中断。</p></div><div class="tab-pane" id="ip-2"><p>定时器&#x2F;计数器1中断优先级控制位。</p>
+<p>PT1 &#x3D; 1，定时器&#x2F;计数器1中断定义为高优先级中断。</p>
+<p>PT1 &#x3D; 0，定时器&#x2F;计数器1中断定义为低优先级中断。</p></div><div class="tab-pane" id="ip-3"><p>外部中断1中断优先级控制位。</p>
+<p>PX1 &#x3D; 1，外部中断1定义为高优先级中断。</p>
+<p>PX1 &#x3D; 0，外部中断1定义为低优先级中断。</p></div><div class="tab-pane" id="ip-4"><p>定时器&#x2F;计数器0中断优先级控制位。</p>
+<p>PT0 &#x3D; 1，定时器&#x2F;计数器0中断定义为高优先级中断。</p>
+<p>PT0 &#x3D; 0，定时器&#x2F;计数器0中断定义为低优先级中断。</p></div><div class="tab-pane" id="ip-5"><p>外部中断0中断优先级控制位。</p>
+<p>PX0 &#x3D; 1，外部中断0定义为高优先级中断。</p>
+<p>PX0 &#x3D; 0，外部中断0定义为低优先级中断。</p></div></div></div>
+
+<h3 id="中断允许寄存器-IE"><a href="#中断允许寄存器-IE" class="headerlink" title="中断允许寄存器 IE"></a><strong>中断允许寄存器 IE</strong></h3><p>中断允许寄存器用来设定各个中断源的打开和关闭。</p>
+<p>想使用那个中断，应先修改此寄存器，让改中断处于打开状态。</p>
+<table>
+<thead>
+<tr>
+<th>位序号</th>
+<th>D7</th>
+<th>D6</th>
+<th>D5</th>
+<th>D4</th>
+<th>D3</th>
+<th>D2</th>
+<th>D1</th>
+<th>D0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>位符号</td>
+<td>EA</td>
+<td>–</td>
+<td>ET2</td>
+<td>ES</td>
+<td>ET1</td>
+<td>EX1</td>
+<td>ET0</td>
+<td>EX0</td>
+</tr>
+<tr>
+<td>位地址</td>
+<td>AFH</td>
+<td>–</td>
+<td>ADH</td>
+<td>ACH</td>
+<td>ABH</td>
+<td>AAH</td>
+<td>A9H</td>
+<td>A8H</td>
+</tr>
+</tbody></table>
+<div class="tabs" id="tab-ie"><ul class="nav-tabs"><li class="tab active"><a class="#ie-1">EA</a></li><li class="tab"><a class="#ie-2">ET2</a></li><li class="tab"><a class="#ie-3">ES</a></li><li class="tab"><a class="#ie-4">ET1</a></li><li class="tab"><a class="#ie-5">EX1</a></li><li class="tab"><a class="#ie-6">ET0</a></li><li class="tab"><a class="#ie-7">EX0</a></li></ul><div class="tab-content"><div class="tab-pane active" id="ie-1"><p>全局中断允许位。</p>
+<p>EA &#x3D; 1，打开全局中断控制，在此条件下，由各个中断控制位确定相应中断的打开或关闭。</p>
+<p>在使用中断前，应先设置好IE寄存器。</p>
+<p>EA &#x3D; 0，关闭全部中断。</p></div><div class="tab-pane" id="ie-2"><p>定时器&#x2F;计数器2中断允许位。</p>
+<p>ET2 &#x3D; 1，打开 T2 中断。</p>
+<p>ET2 &#x3D; 0，关闭 T2 中断。</p></div><div class="tab-pane" id="ie-3"><p>串行口中断允许位。</p>
+<p>ES &#x3D; 1，打开串行口中断。</p>
+<p>ES &#x3D; 0，关闭串行口中断。</p></div><div class="tab-pane" id="ie-4"><p>定时器&#x2F;计数器1中断允许位。</p>
+<p>ET1 &#x3D; 1，打开 T1 中断。</p>
+<p>ET1 &#x3D; 1，关闭 T1 中断。</p></div><div class="tab-pane" id="ie-5"><p>外部中断1中断允许位。</p>
+<p>EX1 &#x3D; 1，打开外部中断1中断。</p>
+<p>EX1 &#x3D; 0，关闭外部中断1中断。</p></div><div class="tab-pane" id="ie-6"><p>定时器&#x2F;计数器0中断允许位。</p>
+<p>ETO &#x3D; 1，打开 T0 中断。</p>
+<p>ETO &#x3D; 0，关闭 T0 中断。</p></div><div class="tab-pane" id="ie-7"><p>外部中断0中断允许位。</p>
+<p>EX0 &#x3D; 1，打开外部中断0中断。</p>
+<p>EX0 &#x3D; 0，关闭外部中断0中断。</p></div></div></div>
+
+<h2 id="单片机定时器中断"><a href="#单片机定时器中断" class="headerlink" title="单片机定时器中断"></a><strong>单片机定时器中断</strong></h2><p>51单片机内部共有两个16位可编程的定时器&#x2F;计数器，即定时器 T0 和定时器 T1。52单片机内部多一个 T2 定时器&#x2F;计数器。它们既有定时功能又有计数功能，通过设置与它们相关的特殊功能寄存器可以选择启用定时功能或计数功能。</p>
+<p>需要注意的是，这个定时器系统是单片机内部一个独立的硬件部分，它与CPU和晶振通过内部某些控制线连接并相互作用，CPU一旦设置开启定时功能后，定时器便在晶振的作用下自动开始计时，当定时器的计数器计满后，会产生中断，即通知CPU该如何处理。</p>
+<p>定时器&#x2F;计数器由高8位和低8位两个寄存器组成（共16位），TH0和TL0，</p>
+<h3 id="定时器工作方式寄存器-TMOD"><a href="#定时器工作方式寄存器-TMOD" class="headerlink" title="定时器工作方式寄存器 TMOD"></a><strong>定时器工作方式寄存器 TMOD</strong></h3><table>
+<thead>
+<tr>
+<th>位序号</th>
+<th>D7</th>
+<th>D6</th>
+<th>D5</th>
+<th>D4</th>
+<th>D3</th>
+<th>D2</th>
+<th>D1</th>
+<th>D0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>位符号</td>
+<td>GATE</td>
+<td>C&#x2F;T</td>
+<td>M1</td>
+<td>M0</td>
+<td>GATEC</td>
+<td>C&#x2F;T</td>
+<td>M1</td>
+<td>M0</td>
+</tr>
+</tbody></table>
+<div class="note info"><p>PS：TMOD 的高4位用于设置定时器 1，低4位用于设置定时器 0</p></div>
+
+<div class="tabs" id="tab-tmod"><ul class="nav-tabs"><li class="tab active"><a class="#tmod-1">GATE</a></li><li class="tab"><a class="#tmod-2">C/T</a></li><li class="tab"><a class="#tmod-3">M1、M0</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tmod-1"><p>门控制位。</p>
+<p>GATE &#x3D; 0，定时器&#x2F;计数器启动与停止仅受TCON寄存器中 TRX（X&#x3D;0，1）来控制。</p>
+<p>GATE &#x3D; 1，定时器&#x2F;计数器启动与停止由TCON寄存器中 TRX（X&#x3D;0，1）和外部中断引脚（INTO或INT1）上的电平状态来共同控制。</p></div><div class="tab-pane" id="tmod-2"><p>定时器模式和计数器模式选择位，</p>
+<p>C&#x2F;T &#x3D; 1，为计数器模式。</p>
+<p>C&#x2F;T &#x3D; 0，为定时器模式。</p></div><div class="tab-pane" id="tmod-3"><p>工作方式选择位。</p>
+<p>每个定时器&#x2F;计数器都有4种工作方式，它们由M1、M0设定：</p>
+<table>
+<thead>
+<tr>
+<th>M1</th>
+<th>M0</th>
+<th>工作方式</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>0</td>
+<td>方式0，为13位定时器&#x2F;计数器</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>方式1，为16位定时器&#x2F;计数器</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>方式2，8位初值自动重装的8位定时器&#x2F;计数器</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>方式3，仅适用于T0，分成两个8位计数器，T1停止计数</td>
+</tr>
+</tbody></table></div></div></div>
+
+<p>通过设置此寄存器，从而控制定时器&#x2F;计数器的工作方式。</p>
+<h3 id="定时器控制寄存器-TCOD"><a href="#定时器控制寄存器-TCOD" class="headerlink" title="定时器控制寄存器 TCOD"></a><strong>定时器控制寄存器 TCOD</strong></h3><table>
+<thead>
+<tr>
+<th>位序号</th>
+<th>D7</th>
+<th>D6</th>
+<th>D5</th>
+<th>D4</th>
+<th>D3</th>
+<th>D2</th>
+<th>D1</th>
+<th>D0</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>位符号</td>
+<td>TF1</td>
+<td>TR1</td>
+<td>TF0</td>
+<td>TR0</td>
+<td>IE1</td>
+<td>IT1</td>
+<td>IE0</td>
+<td>IT0</td>
+</tr>
+<tr>
+<td>位地址</td>
+<td>8FH</td>
+<td>8EH</td>
+<td>8DH</td>
+<td>8CH</td>
+<td>8BH</td>
+<td>8AH</td>
+<td>89H</td>
+<td>88H</td>
+</tr>
+</tbody></table>
+<div class="tabs" id="tab-tcon"><ul class="nav-tabs"><li class="tab active"><a class="#tcon-1">TF1</a></li><li class="tab"><a class="#tcon-2">TR1</a></li><li class="tab"><a class="#tcon-3">TF0</a></li><li class="tab"><a class="#tcon-4">TR0</a></li><li class="tab"><a class="#tcon-5">IE1</a></li><li class="tab"><a class="#tcon-6">IT1</a></li><li class="tab"><a class="#tcon-7">IE0</a></li><li class="tab"><a class="#tcon-8">IT0</a></li></ul><div class="tab-content"><div class="tab-pane active" id="tcon-1"><p>定时器1溢出标志位。</p>
+<p>当定时器1溢出时，硬件会使TF1置1，并且申请中断。当进入中断服务程序之后，硬件自动置0。</p>
+<p>需要注意的是，如果使用定时器的中断，那么该位完全不用人为去操作，但是如果使用软件查询方式的话，当查查询到该位置1后，就需要用软件清0。</p></div><div class="tab-pane" id="tcon-2"><p>定时器1运行控制。</p>
+<p>软件清0关闭定时器1。</p>
+<p>当GATE &#x3D; 1,且 INT1 位高电平时，TR1置1启动定时器1；</p>
+<p>当GATE &#x3D; 0，TR1置1启动定时器1。</p></div><div class="tab-pane" id="tcon-3"><p>定时器0溢出标志，用法与TF1相同。</p></div><div class="tab-pane" id="tcon-4"><p>定时器0运行控制，用法与TR1相同。</p></div><div class="tab-pane" id="tcon-5"><p>外部中断1请求标志。</p>
+<p>当IT1 &#x3D; 0时，为电平触发方式，若INT1脚为低电平，则置1，否则IE1清0。</p></div><div class="tab-pane" id="tcon-6"><p>外部中断1触发方式选择位。</p>
+<p>IT1 &#x3D; 0，为电平触发方式，引脚 INT1 上低电平有效。</p>
+<p>IT1 &#x3D; 1，为跳变沿触发方式，引脚 INT1 上的电平从高到低的负跳变有效。</p></div><div class="tab-pane" id="tcon-7"><p>外部中断0请求标志，用法与IE1相同。</p></div><div class="tab-pane" id="tcon-8"><p>外部中断0请求标志，用法与IT1相同。</p></div></div></div>
+
+<h3 id="定时器的工作方式"><a href="#定时器的工作方式" class="headerlink" title="定时器的工作方式"></a><strong>定时器的工作方式</strong></h3><p>每个定时器都有四种工作模式，通过TMOD寄存器中的M1，M0控制，下面主要从定时器0的工作方式1（16位定时器）讲起。</p>
+<p>方式1的计数器是16位的，那么TL0寄存器就作为低8位，TH0寄存器作为高8位，组成了这个16位计数器。</p>
+<div class="img-wrap"><div class="img-bg"><img class="img lazyload" src="/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/image-20240529211614710.png" class="lazyload" data-srcset="/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/image-20240529211614710.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="定时器0方式1逻辑结构图"></div><span class="image-caption">定时器0方式1逻辑结构图</span></div>
+
+<p>由图可知，当GATE&#x3D;0，TR0&#x3D;1时，TL0会在机器周期的作用下开始加1计数，TL0计满时TH0便开始计数，直至计满溢出，TF0置1，接着就向CPU申请中断，CPU会做出中断处理。这种情况下，只要TR0为1，那么计数就不会停止。这就是整个工作方式，其他8位、13位的工作方式也是大同小异的。</p>
+<h3 id="初始值计算"><a href="#初始值计算" class="headerlink" title="初始值计算"></a><strong>初始值计算</strong></h3><p>定时器启动时，会在原先数值上开始加1计数，如果开始没有给初始值，那么就会从0开始加1。</p>
+<p>现在加入晶振为12MHZ，12个时钟周期为一个机器周期，那么一个机器周期就是1us，计满TH0和TL0就需要2<sup>16</sup>-1个数，再有一个脉冲计数器溢出。那么溢出一次共需65536us，大约为65.5ms。所以可以给TH0和TL0初始值来控制溢出的时间，便可以精准控制时间了。</p>
+<p>下面举一个计算定时1ms的例子：</p>
+<p>1ms那就需要记1000个数，TH0和TL0中应装入的总数为65536-1000&#x3D;64536，首先把64536对256取模：64536&#x2F;256&#x3D;252装入TH0中，然后把64536对256求余：64536%256&#x3D;24装入TL0中。</p>
+<p>总的来说，当定时器方式1时，设机器周期为T<sub>cy</sub>，定时器产生一尺中断时间为t，那么需要计算的个数N&#x3D;t&#x2F;T<sub>cy</sub>，那么装入TH0和TL0中的个数分别为：THX&#x3D;(65536-N)&#x2F;256,	TLX&#x3D;(65536-N)%256</p>
+<p>机器周期T<sub>cy</sub>等于系统的晶振周期，像上面例子12MHZ的晶振，机器周期为1us。再例如晶振频率为11.0592MHZ，那么机器周期为12x(1&#x2F;11059200)≈1.09us。还是计算1ms，那么N&#x3D;1000&#x2F;1.09≈917。</p>
+<h3 id="中断服务程序"><a href="#中断服务程序" class="headerlink" title="中断服务程序"></a><strong>中断服务程序</strong></h3><p>C51的中断函数格式为：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> 函数名() interrupt 中断号 using 工作组</span><br><span class="line">&#123;</span><br><span class="line">​	中断服务程序内容</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>中断函数不能返回任何值，后面的函数名可以随便取；中断函数不带任何参数，中断号是指单片机中几个中断的序号，上面提到过<a href="/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/#%E4%B8%AD%E6%96%AD%E4%BC%98%E5%85%88%E7%BA%A7">点击查看</a>。这个序号是编译识别不同中断的唯一符号，务必要写对。后面的“using 工作组”是指这个中断函数使用单片机内存中4组工作寄存器中的那一组，程序再编译时会自动分配工作组，所以我们可以省略不写。</p>
+<h2 id="程序具体实现"><a href="#程序具体实现" class="headerlink" title="程序具体实现"></a><strong>程序具体实现</strong></h2><p>在我们学完以上内容之后，就可以正式开始使用定时器中断来写一些程序了。</p>
+<p>下面将写一个让LED以1秒亮灭的代码。</p>
+<h4 id="初始化定时器"><a href="#初始化定时器" class="headerlink" title="初始化定时器"></a><strong>初始化定时器</strong></h4><p>在写单片机的定时器时，要在使用定时器之前进行定时器的初始化，通常定时器初始化步骤 如下：</p>
+<ol>
+<li><p>对TMOD赋值，以确定T0和T1的工作方式。</p>
+</li>
+<li><p>计算初始值，并分别给对应的寄存器赋值（TH0&#x2F;1，TL0&#x2F;1）。</p>
+</li>
+<li><p>中断方式时，对IE赋值，开放中断。</p>
+</li>
+<li><p>让TR0或TR1置位，启动定时器&#x2F;计数器定时或计数。</p>
+</li>
+</ol>
+<h4 id="主程序"><a href="#主程序" class="headerlink" title="主程序"></a><strong>主程序</strong></h4><p>下面为定时器0方式1的初始实例：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;reg52.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> uchar unsigned char</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> uint unsigned int</span></span><br><span class="line"></span><br><span class="line">sbit LED=P1^<span class="number">0</span>;</span><br><span class="line">uchar num;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">main</span><span class="params">()</span></span><br><span class="line">&#123;</span><br><span class="line">    TMOD=<span class="number">0x01</span>;				<span class="comment">//设置定时器0为工作方式1(M1、M0为0、1)</span></span><br><span class="line">    TH0=(<span class="number">65536</span><span class="number">-1000</span>)/<span class="number">256</span>;	<span class="comment">//装入初始值定时1ms</span></span><br><span class="line">    TL0=(<span class="number">65536</span><span class="number">-1000</span>)%<span class="number">256</span>;</span><br><span class="line">    EA=<span class="number">1</span>;					<span class="comment">//开总中断</span></span><br><span class="line">    ET0=<span class="number">1</span>;					<span class="comment">//开定时器0中断</span></span><br><span class="line">    TR0=<span class="number">1</span>;					<span class="comment">//启动定时器0</span></span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>);				<span class="comment">//程序停在此处</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">void</span> <span class="title function_">T0_time</span><span class="params">()</span> interrupt 1</span><br><span class="line">&#123;</span><br><span class="line">    TH0=(<span class="number">65536</span><span class="number">-1000</span>)/<span class="number">256</span>;	<span class="comment">//装入初始值</span></span><br><span class="line">    TL0=(<span class="number">65536</span><span class="number">-1000</span>)%<span class="number">256</span>;</span><br><span class="line">    num++;					<span class="comment">//每中断一次num加1</span></span><br><span class="line">    <span class="keyword">if</span>(num==<span class="number">1000</span>)			<span class="comment">//判断如果num等于1000，相当于过了1s</span></span><br><span class="line">    &#123;</span><br><span class="line">    	num=<span class="number">0</span>;				<span class="comment">//将num清0</span></span><br><span class="line">    	LED=~LED;			<span class="comment">//让LED状态取反</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="分析"><a href="#分析" class="headerlink" title="分析"></a><strong>分析</strong></h4><p>程序开始执行，进入主程序后，首先进行定时器中断的初始化，代码中的11~16行都为初始化操作。初始化结束之后程序就停在了while(1); 处，那么就有人会问，程序既然停在了此处那为什么LED会闪烁呢？其实定时器是不受主程序影响的，一旦开启定时器，定时器便会开始计数，当计数溢出时，自动进入中断服务程序执行相应代码。</p>
+<p>在中断服务程序中会发现再次装入了初始值，那就是因为每次溢出后TH0和TL0会从0开始计数，再次装入初始值之后，保证下次中断同样是1ms。中断程序中，每次中断都会对num进行判断，当num等于1000时，也就是过了1s，LED就会亮灭。</p>
+<p>注意：中断服务中不要写过多的处理语句，因为处理语句过多，中断服务程序会消耗较多的时间，当下次中断到来的时候，就会丢失这次中断，造成程序的混乱。一般的原则是：能在主程序中完成的功能不在中断函数中写，若非要在中断程序中实现功能，那么一定要高效、简洁。</p>
+<p>所以上面的实例就可以修改成：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//主程序中改为：</span></span><br><span class="line"><span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span>(num==<span class="number">1000</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        num=<span class="number">0</span>;</span><br><span class="line">        LED=~LED;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//中断函数中改为：</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">T0_time</span><span class="params">()</span> interrupt 1</span><br><span class="line">&#123;</span><br><span class="line">    TH0=(<span class="number">65536</span><span class="number">-1000</span>)/<span class="number">256</span>;	<span class="comment">//装入初始值</span></span><br><span class="line">    TL0=(<span class="number">65536</span><span class="number">-1000</span>)%<span class="number">256</span>;</span><br><span class="line">    num++;					<span class="comment">//每中断一次num加1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h3><p>这篇博客主要讲了中断的概念，定时器怎么使用。</p>
+<p>主要介绍的是定时器0方式1的具体实现方法，此外还有其他定时器的中断这里就不一一阐述了，具体用法与此例子大同小异。</p>
+<p>中断是一个很基础的东西，会在许多地方都能用到，最主要的就是掌握最主要的那几个控制寄存器，然后学会根据想要中断的时间计算初始值。</p>
+<p>本篇算是比较入门的讲解，本人水平有限，文章中可能会有一些错误，如果您发现那里有错误，也请下方评论指出。</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+        
+          
+          <div class="copyright license">
+            <div class="license-title">51单片机中断</div>
+            <div class="license-link"><a href="https://diguzhs.github.io/2024/05/26/51单片机中断/">https://diguzhs.github.io/2024/05/26/51单片机中断/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">DUSK</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2024年5月26日</div>
+              </div>
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">更新于</div>
+                <div class="license-meta-text">2024年5月30日</div>
+              </div>
+              
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text">禁止转载引用</div>
+              </div>
+            </div>
+            <div class="license-statement">除非获得原作者的单独授权，任何第三方不得转载！</div>
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://diguzhs.github.io/2024/05/22/hexo博客中图片无法显示（解决方法）/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="DUSK's Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="DUSK's Blog">
-    <meta itemprop="description" content="交接学习 技术分享">
-  </span>
-  
-  
-  
-    <div class='headimg-div'>
-      <a class='headimg-a' href="/2024/05/22/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%EF%BC%88%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%89/">
-        <img itemprop="image" class='headimg' alt="hexo博客中图片无法显示（解决方法）" src='https://img2.imgtp.com/2024/05/23/VYc6DQq9.jpg'/>
-      </a>
+      <!-- 打赏组件 -->
+      
     </div>
   
   
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/22/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%EF%BC%88%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%89/"  itemprop="url">
-        hexo博客中图片无法显示（解决方法）
-      </a>
-    </h2>
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          
   
-  <div class='md article-desc' itemprop="articleBody">
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>教程</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/C51/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>C51</p></a></div>
+  <span hidden itemprop="keywords">教程 C51</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-      第一次使用hexo，参考官方文档在博客中插入图片发现，无法正常显示。通过查看静态文件发现图片的链接没有正常转换。
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://diguzhs.github.io/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/&title=51单片机中断 - DUSK's Blog&summary=中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理；CPU 暂时停止当前的工作，转去处理事件B；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A，这一过程称为中断。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://diguzhs.github.io/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/&title=51单片机中断 - DUSK's Blog&summary=中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理；CPU 暂时停止当前的工作，转去处理事件B；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A，这一过程称为中断。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://diguzhs.github.io/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/&title=51单片机中断 - DUSK's Blog&summary=中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理；CPU 暂时停止当前的工作，转去处理事件B；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A，这一过程称为中断。"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+</div>
+
+
+
         
-        <time itemprop="dateCreated datePublished" datetime="2024-05-22T15:30:41+08:00">2024-05-22</time>
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/2024/05/22/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%EF%BC%88%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%89/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/05/22/hexo%E5%8D%9A%E5%AE%A2%E4%B8%AD%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%EF%BC%88%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%89/'>
+          <p class='title'>hexo博客中图片无法显示（解决方法）<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前言第一次使用hexo，参考官方文档在博客中插入图片发现，无法正常显示。通过查看静态文件发现图片的链接没有正常转换。
+下面就是解决方法。
+解决方法修改hexo配置文件打开根目录下的_config...</p>
+        </a>
       
     </div>
   
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
+  <!-- Custom Files postEnd begin-->
   
-    
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
-	
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3064,157 +3565,52 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://img2.imgtp.com/2024/05/18/JAhJeqDG.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">DUSK's Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:2919408342@qq.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/C51/" style="font-size: 14px; color: #999">C51</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop sidebar pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>2 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>3.9k 字</div>
-        </div>
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2024-05-30 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E6%A6%82%E5%BF%B5"><span class="toc-text">中断概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-text">中断优先级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E4%BC%98%E5%85%88%E7%BA%A7%E5%AF%84%E5%AD%98%E5%99%A8-IP"><span class="toc-text">中断优先级寄存器 IP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E5%85%81%E8%AE%B8%E5%AF%84%E5%AD%98%E5%99%A8-IE"><span class="toc-text">中断允许寄存器 IE</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E7%89%87%E6%9C%BA%E5%AE%9A%E6%97%B6%E5%99%A8%E4%B8%AD%E6%96%AD"><span class="toc-text">单片机定时器中断</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E6%97%B6%E5%99%A8%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F%E5%AF%84%E5%AD%98%E5%99%A8-TMOD"><span class="toc-text">定时器工作方式寄存器 TMOD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E6%97%B6%E5%99%A8%E6%8E%A7%E5%88%B6%E5%AF%84%E5%AD%98%E5%99%A8-TCOD"><span class="toc-text">定时器控制寄存器 TCOD</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9A%E6%97%B6%E5%99%A8%E7%9A%84%E5%B7%A5%E4%BD%9C%E6%96%B9%E5%BC%8F"><span class="toc-text">定时器的工作方式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%80%BC%E8%AE%A1%E7%AE%97"><span class="toc-text">初始值计算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E6%9C%8D%E5%8A%A1%E7%A8%8B%E5%BA%8F"><span class="toc-text">中断服务程序</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E5%85%B7%E4%BD%93%E5%AE%9E%E7%8E%B0"><span class="toc-text">程序具体实现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E5%AE%9A%E6%97%B6%E5%99%A8"><span class="toc-text">初始化定时器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E7%A8%8B%E5%BA%8F"><span class="toc-text">主程序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E6%9E%90"><span class="toc-text">分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3238,13 +3634,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3253,14 +3650,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4039,7 +4436,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"DUSK's Blog","url":"https://diguzhs.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"ZHS Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://diguzhs.github.io/","sameAs":["https://github.com/volantis-x"],"description":"交接学习 技术分享"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://diguzhs.github.io/","name":"DUSK's Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://diguzhs.github.io/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://diguzhs.github.io/archives/2024/","name":"2024年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://diguzhs.github.io/archives/2024/5/","name":"5月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"DUSK's Blog","url":"https://diguzhs.github.io/","keywords":null,"description":"交接学习 技术分享","author":{"@type":"Person","name":"ZHS Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://diguzhs.github.io/","description":"交接学习 技术分享"},"publisher":{"@type":"Organization","name":"DUSK's Blog","url":"https://diguzhs.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://diguzhs.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"交接学习 技术分享","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"ZHS Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://diguzhs.github.io/"},"publisher":{"@type":"Organization","name":"DUSK's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"DUSK's Blog","url":"https://diguzhs.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"ZHS Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://diguzhs.github.io/","sameAs":["https://github.com/volantis-x"],"description":"交接学习 技术分享"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://diguzhs.github.io/","name":"DUSK's Blog"}},{"@type":"ListItem","position":3,"item":{"@id":"https://diguzhs.github.io/2024/05/26/51单片机中断/","name":"51单片机中断"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"DUSK's Blog","url":"https://diguzhs.github.io/","keywords":null,"description":"交接学习 技术分享","author":{"@type":"Person","name":"ZHS Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://diguzhs.github.io/","description":"交接学习 技术分享"},"publisher":{"@type":"Organization","name":"DUSK's Blog","url":"https://diguzhs.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://diguzhs.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"51单片机中断","description":"中断是指 CPU 在处理某一事件A时，发生了另一事件B，请求 CPU 迅速去处理；CPU 暂时停止当前的工作，转去处理事件B；待 CPU 将事件B处理完毕后，再回到原来事件A被中断的地方继续处理事件A，这一过程称为中断。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://diguzhs.github.io/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/"},"author":{"@type":"Person","name":"ZHS Doe","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://diguzhs.github.io/"},"publisher":{"@type":"Organization","name":"DUSK's Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://diguzhs.github.io/2024/05/26/51%E5%8D%95%E7%89%87%E6%9C%BA%E4%B8%AD%E6%96%AD/","wordCount":110,"datePublished":"2024-05-26T07:41:41.000Z","dateModified":"2024-05-30T11:00:51.821Z","keywords":"教程,C51","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
